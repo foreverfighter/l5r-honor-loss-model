@@ -1,4 +1,3 @@
-import csv
 import random
 
 # inputs
@@ -14,7 +13,7 @@ STARTING_HONOR = 11
 class Player:
 
     def __init__(self):
-        self.honor = 11
+        self.honor = STARTING_HONOR
         self.cards_drawn = 0
         self.honor_lost_from_conf = 0
 
@@ -62,7 +61,7 @@ class Game:
 
     def reset_stats(self):
         for p in self.players:
-            p.honor = 11
+            p.honor = STARTING_HONOR
             p.cards_drawn = 0
             p.honor_lost_from_conf = 0
 
